@@ -1,5 +1,5 @@
 {
-    "name": "your-vendor/db-backup-sender",
+    "name": "ibaranov/db-backup-sender",
     "version": "1.0.0",
     "description": "Почасовое резервное копирование баз MySQL/MariaDB Laravel-проектов с отправкой дампа на удалённый приёмник",
     "type": "library",
