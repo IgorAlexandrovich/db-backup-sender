@@ -1,6 +1,6 @@
 {
     "name": "ibaranov/db-backup-sender",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Почасовое резервное копирование баз MySQL/MariaDB Laravel-проектов с отправкой дампа на удалённый приёмник",
     "type": "library",
     "license": "MIT",
