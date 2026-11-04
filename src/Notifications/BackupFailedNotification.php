@@ -29,7 +29,7 @@ final class BackupFailedNotification extends Notification
      *     host: string|null
      * } $details
      */
-    public function __construct(private readonly array $details)
+    public function __construct(private array $details)
     {
     }
 

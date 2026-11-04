@@ -18,7 +18,7 @@ final class Compressor
     /** Размер блока чтения. */
     private const CHUNK_SIZE = 1048576;
 
-    public function __construct(private readonly int $level = 6)
+    public function __construct(private int $level = 6)
     {
     }
 

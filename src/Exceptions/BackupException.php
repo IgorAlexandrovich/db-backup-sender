@@ -21,8 +21,8 @@ class BackupException extends RuntimeException
      */
     public function __construct(
         string $message,
-        private readonly string $stage = Stages::CONFIG,
-        private readonly array $context = [],
+        private string $stage = Stages::CONFIG,
+        private array $context = [],
         ?Throwable $previous = null,
     ) {
         parent::__construct($message, 0, $previous);

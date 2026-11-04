@@ -20,9 +20,9 @@ final class UploadException extends BackupException
      */
     public function __construct(
         string $message,
-        private readonly int $attempts = 1,
-        private readonly int $maxAttempts = 1,
-        private readonly bool $retryable = false,
+        private int $attempts = 1,
+        private int $maxAttempts = 1,
+        private bool $retryable = false,
         array $context = [],
         ?Throwable $previous = null,
     ) {

@@ -16,12 +16,12 @@ final class UploadResult
      * @param array<string, mixed> $response Полный ответ приёмника.
      */
     public function __construct(
-        public readonly string $project,
-        public readonly string $file,
-        public readonly int $size,
-        public readonly string $sha256,
-        public readonly int $attempts,
-        public readonly array $response = [],
+        public string $project,
+        public string $file,
+        public int $size,
+        public string $sha256,
+        public int $attempts,
+        public array $response = [],
     ) {
     }
 

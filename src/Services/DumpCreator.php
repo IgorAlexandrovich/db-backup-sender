@@ -38,11 +38,11 @@ final class DumpCreator
      * @param list<string>         $extraArguments Дополнительные аргументы mysqldump.
      */
     public function __construct(
-        private readonly array $connection,
-        private readonly string $binary = '',
-        private readonly int $timeoutSeconds = 0,
-        private readonly array $extraArguments = [],
-        private readonly ?LoggerInterface $logger = null,
+        private array $connection,
+        private string $binary = '',
+        private int $timeoutSeconds = 0,
+        private array $extraArguments = [],
+        private ?LoggerInterface $logger = null,
     ) {
     }
 

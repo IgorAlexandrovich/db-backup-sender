@@ -31,15 +31,15 @@ final class Uploader
     private const MAX_MESSAGE_LENGTH = 500;
 
     public function __construct(
-        private readonly string $url,
-        private readonly string $token,
-        private readonly string $header = 'X-Backup-Token',
-        private readonly int $timeout = 180,
-        private readonly int $retries = 3,
-        private readonly int $retryDelay = 5,
-        private readonly bool $verifySsl = true,
-        private readonly bool $allowInsecureHttp = false,
-        private readonly ?LoggerInterface $logger = null,
+        private string $url,
+        private string $token,
+        private string $header = 'X-Backup-Token',
+        private int $timeout = 180,
+        private int $retries = 3,
+        private int $retryDelay = 5,
+        private bool $verifySsl = true,
+        private bool $allowInsecureHttp = false,
+        private ?LoggerInterface $logger = null,
     ) {
     }
 
