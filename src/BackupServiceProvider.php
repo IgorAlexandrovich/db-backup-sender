@@ -133,7 +133,7 @@ final class BackupServiceProvider extends ServiceProvider
             $path = (string) ($settings['path'] ?? storage_path('logs/db-backup.log'));
             $directory = dirname($path);
             if (! is_dir($directory)) {
-                @mkdir($directory, 0o775, true);
+                @mkdir($directory, 0775, true);
             }
 
             return $manager->build([
