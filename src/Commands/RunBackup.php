@@ -209,7 +209,7 @@ final class RunBackup extends Command
             . DIRECTORY_SEPARATOR . $this->project
             . DIRECTORY_SEPARATOR . date('Ymd-His') . '-' . Str::lower(Str::random(8));
 
-        if (! is_dir($workspace) && ! @mkdir($workspace, 0o750, true) && ! is_dir($workspace)) {
+        if (! is_dir($workspace) && ! @mkdir($workspace, 0750, true) && ! is_dir($workspace)) {
             throw new ConfigurationException(sprintf(
                 'не удалось создать каталог для временных файлов "%s" — проверьте права на storage/app',
                 $workspace,

@@ -200,7 +200,7 @@ final class CheckCommand extends Command
         $path = (string) config('db-backup.temp_path', 'storage/app/backups');
         $absolute = str_starts_with($path, '/') ? $path : base_path($path);
 
-        if (! is_dir($absolute) && ! @mkdir($absolute, 0o750, true) && ! is_dir($absolute)) {
+        if (! is_dir($absolute) && ! @mkdir($absolute, 0750, true) && ! is_dir($absolute)) {
             $this->report('Каталог временных файлов', false, sprintf('не удалось создать "%s"', $absolute));
 
             return;

@@ -224,7 +224,7 @@ final class DumpCreator
         $database = $this->database();
 
         $directory = dirname($targetPath);
-        if (! is_dir($directory) && ! @mkdir($directory, 0o750, true) && ! is_dir($directory)) {
+        if (! is_dir($directory) && ! @mkdir($directory, 0750, true) && ! is_dir($directory)) {
             throw new DumpException(sprintf('не удалось создать каталог для дампа "%s"', $directory));
         }
 
@@ -233,7 +233,7 @@ final class DumpCreator
         if ($configFile === false) {
             throw new DumpException(sprintf('не удалось создать временный файл конфигурации MySQL в "%s"', $directory));
         }
-        @chmod($configFile, 0o600);
+        @chmod($configFile, 0600);
 
         $written = file_put_contents($configFile, $this->clientConfigContents());
         if ($written === false) {
