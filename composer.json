@@ -23,7 +23,7 @@
         "ext-zlib": "*",
         "ext-hash": "*",
         "ext-json": "*",
-        "illuminate/config": "^10.0|^11.0|^12.0",
+        "illuminate/config": "^8.0|^9.0|^10.0|^11.0|^12.0",
         "illuminate/console": "^10.0|^11.0|^12.0",
         "illuminate/contracts": "^10.0|^11.0|^12.0",
         "illuminate/database": "^10.0|^11.0|^12.0",
